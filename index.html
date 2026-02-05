@@ -6,185 +6,290 @@
 <title>Muebles Bravo</title>
 
 <style>
-
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f4f4;
 }
 
-/* HEADER */
-
-header{
-    background:#1f1f1f;
-    color:white;
-    padding:40px 20px;
-    text-align:center;
+/* NAVBAR */
+nav{
+background:#1f1f1f;
+color:white;
+padding:15px 30px;
+font-size:20px;
+font-weight:bold;
 }
 
-header h1{
-    margin:0;
-    font-size:38px;
+/* HERO */
+.hero{
+background:#2c2c2c;
+color:white;
+text-align:center;
+padding:80px 20px;
 }
 
-header p{
-    font-size:18px;
-    color:#ccc;
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
 }
 
-/* BOTONES */
+.hero p{
+font-size:18px;
+color:#ccc;
+}
 
 .boton{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 25px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
+display:inline-block;
+margin-top:20px;
+padding:14px 26px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
 }
 
 /* SECCIONES */
-
 section{
-    padding:50px 20px;
-    max-width:1100px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
 }
 
 h2{
-    text-align:center;
-    margin-bottom:30px;
+text-align:center;
+margin-bottom:30px;
 }
 
 /* GALERIA */
-
 .galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    padding:15px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    text-align:center;
+background:white;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
 }
 
 .card img{
-    width:100%;
-    border-radius:6px;
+width:100%;
+border-radius:6px;
 }
 
 /* PROCESO */
-
 .proceso{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .paso{
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    text-align:center;
+background:white;
+padding:20px;
+border-radius:8px;
+text-align:center;
+}
+
+/* CONTACTO */
+.contacto{
+text-align:center;
+line-height:1.8;
 }
 
 /* FOOTER */
-
 footer{
-    background:#1f1f1f;
-    color:white;
-    text-align:center;
-    padding:30px;
+background:#1f1f1f;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
 }
 
+/* BOTON WHATSAPP FLOTANTE */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Muebles Bravo</h1>
-    <p>Fabricación de cocinas y closets a medida en Colbún</p>
-    <a class="boton" href="https://wa.me/56992512845">
-        Cotizar por WhatsApp
-    </a>
-</header>
+<nav>Muebles Bravo</nav>
+
+<div class="hero">
+<h1>Cocinas y Closets a Medida</h1>
+<p>Fabricación profesional en Colbún</p>
+<a class="boton" href="https://wa.me/56992512845?text=Hola,%20quiero%20cotizar%20un%20mueble">
+Cotizar ahora
+</a>
+</div>
 
 <section>
-    <h2>Proyectos de Cocinas</h2>
+<h2>Proyectos de Cocinas</h2>
 
-    <div class="galeria">
+<div class="galeria">
+<div class="card">
+<img src="imagenes/cocina1.jpg">
+<p>Cocina moderna en melamina</p>
+</div>
 
-        <div class="card">
-            <img src="imagenes/cocina1.jpg">
-            <p>Cocina moderna en melamina</p>
-        </div>
-
-        <div class="card">
-            <img src="imagenes/cocina2.jpg">
-            <p>Cocina en L con horno empotrado</p>
-        </div>
-
-    </div>
+<div class="card">
+<img src="imagenes/cocina2.jpg">
+<p>Cocina equipada con horno empotrado</p>
+</div>
+</div>
 </section>
 
 <section>
-    <h2>Proyectos de Closets</h2>
+<h2>Proyectos de Closets</h2>
 
-    <div class="galeria">
+<div class="galeria">
+<div class="card">
+<img src="imagenes/closet1.jpg">
+<p>Closet moderno blanco</p>
+</div>
 
-        <div class="card">
-            <img src="imagenes/closet1.jpg">
-            <p>Closet blanco con cajoneras</p>
-        </div>
-
-        <div class="card">
-            <img src="imagenes/closet2.jpg">
-            <p>Closet moderno a medida</p>
-        </div>
-
-    </div>
+<div class="card">
+<img src="imagenes/closet2.jpg">
+<p>Closet con cajoneras</p>
+</div>
+</div>
 </section>
 
 <section>
-    <h2>Cómo trabajamos</h2>
+<h2>Cómo trabajamos</h2>
 
-    <div class="proceso">
-        <div class="paso">1. Contacto y asesoría</div>
-        <div class="paso">2. Medición y diseño</div>
-        <div class="paso">3. Fabricación</div>
-        <div class="paso">4. Instalación</div>
-    </div>
+<div class="proceso">
+<div class="paso">1. Contacto y asesoría</div>
+<div class="paso">2. Medición en terreno</div>
+<div class="paso">3. Fabricación</div>
+<div class="paso">4. Instalación</div>
+</div>
 
 </section>
 
 <section>
-    <h2>Contacto</h2>
+<h2>Agendar Visita</h2>
 
-    <p style="text-align:center">
-        📍 O’Higgins 318, Colbún<br><br>
-        📞 +56 9 9251 2845<br><br>
-        🕒 Lunes a viernes 09:30–13:00 / 14:00–18:30<br>
-        Sábado 10:00–16:00
-    </p>
+<div class="contacto">
+<p>Agenda una visita o cotización directamente por WhatsApp.</p>
 
-    <div style="text-align:center">
-        <a class="boton" href="https://wa.me/56992512845">
-            Agendar visita
-        </a>
-    </div>
+<a class="boton" href="https://wa.me/56992512845?text=Hola,%20quiero%20agendar%20una%20visita">
+Agendar visita
+</a>
+
+</div>
+</section>
+
+<section>
+<h2>Contacto</h2>
+
+<div class="contacto">
+📍 O’Higgins 318, Colbún<br>
+📞 +56 9 9251 2845<br>
+🕒 Lunes a viernes 09:30–13:00 / 14:00–18:30<br>
+Sábado 10:00–16:00
+</div>
 
 </section>
 
 <footer>
-    © Muebles Bravo
+© Muebles Bravo
 </footer>
+
+<a class="whatsapp" href="https://wa.me/56992512845">W</a>
+<!-- CHATBOT -->
+<style>
+.chatbot-boton{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#333;
+color:white;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+}
+
+.chatbot{
+position:fixed;
+bottom:140px;
+right:20px;
+width:300px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+display:none;
+font-family:Arial;
+}
+
+.chatbot-header{
+background:#1f1f1f;
+color:white;
+padding:10px;
+border-radius:10px 10px 0 0;
+}
+
+.chatbot-body{
+padding:15px;
+}
+
+.chatbot-body button{
+width:100%;
+margin-top:10px;
+padding:10px;
+border:none;
+background:#25D366;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+
+<div class="chatbot-boton" onclick="toggleChat()">💬</div>
+
+<div class="chatbot" id="chatbot">
+<div class="chatbot-header">Muebles Bravo</div>
+<div class="chatbot-body">
+
+<p>Hola 👋 ¿En qué podemos ayudarte?</p>
+
+<button onclick="cotizar()">Cotizar cocina o closet</button>
+<button onclick="visita()">Agendar visita</button>
+
+</div>
+</div>
+
+<script>
+function toggleChat(){
+var chat = document.getElementById("chatbot");
+chat.style.display = chat.style.display === "block" ? "none" : "block";
+}
+
+function cotizar(){
+window.open("https://wa.me/56992512845?text=Hola,%20quiero%20cotizar%20un%20mueble");
+}
+
+function visita(){
+window.open("https://wa.me/56992512845?text=Hola,%20quiero%20agendar%20una%20visita");
+}
+</script>
 
 </body>
 </html>
